@@ -1,8 +1,3 @@
-"""Run the whole pipeline: data -> teacher -> students -> prune -> quantize -> benchmark.
-
-Every stage is also importable on its own, so a failure late in the run does not
-mean retraining the teacher.
-"""
 
 import argparse
 import sys

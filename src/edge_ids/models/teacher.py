@@ -1,10 +1,4 @@
-"""The teacher: an over-parameterized MLP that is not meant to be deployable.
 
-Its job is to be as accurate as this data permits, establishing the ceiling that
-every compressed model is measured against, and to supply the soft probability
-distributions the student learns from. At roughly 211K parameters for ~70 input
-features it is deliberately far larger than the problem requires.
-"""
 
 import torch.nn as nn
 

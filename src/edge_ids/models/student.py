@@ -1,12 +1,4 @@
-"""The student: a compact MLP small enough for router-class hardware.
 
-Plain Linear+ReLU only, with no BatchNorm. That is a deliberate constraint rather
-than an oversight: BatchNorm needs layer fusion before static quantization, and
-its running statistics would have to be sliced in step with the surviving neurons
-during the pruning rebuild. Keeping the student a bare stack of Linear layers
-makes both compression stages auditable, and at this width the accuracy cost is
-negligible.
-"""
 
 import torch.nn as nn
 from torch.ao.quantization import DeQuantStub, QuantStub

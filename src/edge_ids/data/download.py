@@ -22,8 +22,7 @@ ZIP_MAGIC = b"PK\x03\x04"
 IDS2018_BASE = "https://cse-cic-ids2018.s3.amazonaws.com"
 IDS2018_PREFIX = "Processed Traffic Data for ML Algorithms"
 
-# Which attack each capture day carries. Friday-02-03-2018 is the botnet day and
-# the one this project cares about most.
+
 IDS2018_DAYS = {
     "Wednesday-14-02-2018": "FTP-BruteForce, SSH-Bruteforce",
     "Thursday-15-02-2018": "DoS-GoldenEye, DoS-Slowloris",
